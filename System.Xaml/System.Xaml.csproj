@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00B7DDE4-EDD9-43D6-A05C-866D9ABC825C}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>System.Xaml</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>System.Xaml</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="System.Windows.Markup\" />
+    <Folder Include="System.Xaml\" />
+    <Folder Include="System.Xaml.Permissions\" />
+    <Folder Include="System.Xaml.Schema\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Compile Include="System.Windows.Markup\AmbientAttribute.cs" />
+    <Compile Include="System.Windows.Markup\ArrayExtension.cs" />
+    <Compile Include="System.Windows.Markup\ConstructorArgumentAttribute.cs" />
+    <Compile Include="System.Windows.Markup\ContentPropertyAttribute.cs" />
+    <Compile Include="System.Windows.Markup\ContentWrapperAttribute.cs" />
+    <Compile Include="System.Windows.Markup\DateTimeValueSerializer.cs" />
+    <Compile Include="System.Windows.Markup\DependsOnAttribute.cs" />
+    <Compile Include="System.Windows.Markup\DictionaryKeyPropertyAttribute.cs" />
+    <Compile Include="System.Windows.Markup\IComponentConnector.cs" />
+    <Compile Include="System.Windows.Markup\INameScope.cs" />
+    <Compile Include="System.Windows.Markup\INameScopeDictionary.cs" />
+    <Compile Include="System.Windows.Markup\IProvideValueTarget.cs" />
+    <Compile Include="System.Windows.Markup\IQueryAmbient.cs" />
+    <Compile Include="System.Windows.Markup\IUriContext.cs" />
+    <Compile Include="System.Windows.Markup\IValueSerializerContext.cs" />
+    <Compile Include="System.Windows.Markup\IXamlTypeResolver.cs" />
+    <Compile Include="System.Windows.Markup\MarkupExtension.cs" />
+    <Compile Include="System.Windows.Markup\MarkupExtensionReturnTypeAttribute.cs" />
+    <Compile Include="System.Windows.Markup\MemberDefinition.cs" />
+    <Compile Include="System.Windows.Markup\NameReferenceConverter.cs" />
+    <Compile Include="System.Windows.Markup\NameScopePropertyAttribute.cs" />
+    <Compile Include="System.Windows.Markup\NullExtension.cs" />
+    <Compile Include="System.Windows.Markup\PropertyDefinition.cs" />
+    <Compile Include="System.Windows.Markup\Reference.cs" />
+    <Compile Include="System.Windows.Markup\RootNamespaceAttribute.cs" />
+    <Compile Include="System.Windows.Markup\RuntimeNamePropertyAttribute.cs" />
+    <Compile Include="System.Windows.Markup\StaticExtension.cs" />
+    <Compile Include="System.Windows.Markup\StaticExtensionConverter.cs" />
+    <Compile Include="System.Windows.Markup\TrimSurroundingWhitespaceAttribute.cs" />
+    <Compile Include="System.Windows.Markup\TypeExtension.cs" />
+    <Compile Include="System.Windows.Markup\TypeExtensionConverter.cs" />
+    <Compile Include="System.Windows.Markup\UidPropertyAttribute.cs" />
+    <Compile Include="System.Windows.Markup\UsableDuringInitializationAttribute.cs" />
+    <Compile Include="System.Windows.Markup\ValueSerializer.cs" />
+    <Compile Include="System.Windows.Markup\ValueSerializerAttribute.cs" />
+    <Compile Include="System.Windows.Markup\WhitespaceSignificantCollectionAttribute.cs" />
+    <Compile Include="System.Windows.Markup\XData.cs" />
+    <Compile Include="System.Windows.Markup\XamlDeferLoadAttribute.cs" />
+    <Compile Include="System.Windows.Markup\XamlSetMarkupExtensionAttribute.cs" />
+    <Compile Include="System.Windows.Markup\XamlSetMarkupExtensionEventArgs.cs" />
+    <Compile Include="System.Windows.Markup\XamlSetTypeConverterAttribute.cs" />
+    <Compile Include="System.Windows.Markup\XamlSetTypeConverterEventArgs.cs" />
+    <Compile Include="System.Windows.Markup\XamlSetValueEventArgs.cs" />
+    <Compile Include="System.Windows.Markup\XmlLangPropertyAttribute.cs" />
+    <Compile Include="System.Windows.Markup\XmlnsCompatibleWithAttribute.cs" />
+    <Compile Include="System.Windows.Markup\XmlnsDefinitionAttribute.cs" />
+    <Compile Include="System.Windows.Markup\XmlnsPrefixAttribute.cs" />
+    <Compile Include="System.Xaml\AmbientPropertyValue.cs" />
+    <Compile Include="System.Xaml\AttachableMemberIdentifier.cs" />
+    <Compile Include="System.Xaml\AttachablePropertyServices.cs" />
+    <Compile Include="System.Xaml\IAmbientProvider.cs" />
+    <Compile Include="System.Xaml\IAttachedPropertyStore.cs" />
+    <Compile Include="System.Xaml\IDestinationTypeProvider.cs" />
+    <Compile Include="System.Xaml\INamespacePrefixLookup.cs" />
+    <Compile Include="System.Xaml\IRootObjectProvider.cs" />
+    <Compile Include="System.Xaml\IXamlIndexingReader.cs" />
+    <Compile Include="System.Xaml\IXamlLineInfo.cs" />
+    <Compile Include="System.Xaml\IXamlLineInfoConsumer.cs" />
+    <Compile Include="System.Xaml\IXamlNameProvider.cs" />
+    <Compile Include="System.Xaml\IXamlNameResolver.cs" />
+    <Compile Include="System.Xaml\IXamlNamespaceResolver.cs" />
+    <Compile Include="System.Xaml\IXamlObjectWriterFactory.cs" />
+    <Compile Include="System.Xaml\IXamlSchemaContextProvider.cs" />
+    <Compile Include="System.Xaml\NameScope.cs" />
+    <Compile Include="System.Xaml\NamespaceDeclaration.cs" />
+    <Compile Include="System.Xaml\ParsedMarkupExtensionInfo.cs" />
+    <Compile Include="System.Xaml\PrefixLookup.cs" />
+    <Compile Include="System.Xaml\TypeExtensionMethods.cs" />
+    <Compile Include="System.Xaml\ValueSerializerContext.cs" />
+    <Compile Include="System.Xaml\XamlBackgroundReader.cs" />
+    <Compile Include="System.Xaml\XamlDeferringLoader.cs" />
+    <Compile Include="System.Xaml\XamlDirective.cs" />
+    <Compile Include="System.Xaml\XamlDuplicateMemberException.cs" />
+    <Compile Include="System.Xaml\XamlException.cs" />
+    <Compile Include="System.Xaml\XamlInternalException.cs" />
+    <Compile Include="System.Xaml\XamlLanguage.cs" />
+    <Compile Include="System.Xaml\XamlMember.cs" />
+    <Compile Include="System.Xaml\XamlNameResolver.cs" />
+    <Compile Include="System.Xaml\XamlNode.cs" />
+    <Compile Include="System.Xaml\XamlNodeList.cs" />
+    <Compile Include="System.Xaml\XamlNodeQueue.cs" />
+    <Compile Include="System.Xaml\XamlNodeQueueReader.cs" />
+    <Compile Include="System.Xaml\XamlNodeQueueWriter.cs" />
+    <Compile Include="System.Xaml\XamlNodeType.cs" />
+    <Compile Include="System.Xaml\XamlObjectEventArgs.cs" />
+    <Compile Include="System.Xaml\XamlObjectNodeIterator.cs" />
+    <Compile Include="System.Xaml\XamlObjectReader.cs" />
+    <Compile Include="System.Xaml\XamlObjectReaderException.cs" />
+    <Compile Include="System.Xaml\XamlObjectReaderSettings.cs" />
+    <Compile Include="System.Xaml\XamlObjectWriter.cs" />
+    <Compile Include="System.Xaml\XamlObjectWriterException.cs" />
+    <Compile Include="System.Xaml\XamlObjectWriterSettings.cs" />
+    <Compile Include="System.Xaml\XamlParseException.cs" />
+    <Compile Include="System.Xaml\XamlReader.cs" />
+    <Compile Include="System.Xaml\XamlReaderSettings.cs" />
+    <Compile Include="System.Xaml\XamlSchemaContext.cs" />
+    <Compile Include="System.Xaml\XamlSchemaContextSettings.cs" />
+    <Compile Include="System.Xaml\XamlSchemaException.cs" />
+    <Compile Include="System.Xaml\XamlServices.cs" />
+    <Compile Include="System.Xaml\XamlSubtreeReader.cs" />
+    <Compile Include="System.Xaml\XamlType.cs" />
+    <Compile Include="System.Xaml\XamlWriter.cs" />
+    <Compile Include="System.Xaml\XamlWriterInternalBase.cs" />
+    <Compile Include="System.Xaml\XamlWriterSettings.cs" />
+    <Compile Include="System.Xaml\XamlWriterStateManager.cs" />
+    <Compile Include="System.Xaml\XamlXmlReader.cs" />
+    <Compile Include="System.Xaml\XamlXmlReaderSettings.cs" />
+    <Compile Include="System.Xaml\XamlXmlWriter.cs" />
+    <Compile Include="System.Xaml\XamlXmlWriterException.cs" />
+    <Compile Include="System.Xaml\XamlXmlWriterSettings.cs" />
+    <Compile Include="System.Xaml.Permissions\XamlAccessLevel.cs" />
+    <Compile Include="System.Xaml.Permissions\XamlLoadPermission.cs" />
+    <Compile Include="System.Xaml.Schema\AllowedMemberLocations.cs" />
+    <Compile Include="System.Xaml.Schema\ShouldSerializeResult.cs" />
+    <Compile Include="System.Xaml.Schema\XamlCollectionKind.cs" />
+    <Compile Include="System.Xaml.Schema\XamlMemberInvoker.cs" />
+    <Compile Include="System.Xaml.Schema\XamlTypeInvoker.cs" />
+    <Compile Include="System.Xaml.Schema\XamlTypeName.cs" />
+    <Compile Include="System.Xaml.Schema\XamlTypeTypeConverter.cs" />
+    <Compile Include="System.Xaml.Schema\XamlValueConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="System.Windows.Markup\ChangeLog" />
+    <None Include="System.Xaml\ChangeLog" />
+    <None Include="System.Xaml.Permissions\ChangeLog" />
+    <None Include="System.Xaml.Schema\ChangeLog" />
+  </ItemGroup>
+</Project>

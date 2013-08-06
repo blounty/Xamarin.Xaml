@@ -1,0 +1,9 @@
+<uiKit:XamlUIView
+    xmlns:uiKit="clr-namespace:Xamarin.Xaml.iOS.UIKit;assembly=Xamarin.Xaml.iOS"
+    xmlns:drawing="clr-namespace:System.Drawing;assembly=monotouch"
+    XamlBackgroundColor="255,255,0,0">
+	    <uiKit:XamlUIView XamlBackgroundColor="255,0,255,0" XamlFrame="0,0,100,100">
+	    </uiKit:XamlUIView>
+	    <uiKit:XamlUIView XamlBackgroundColor="255,0,0,255" XamlFrame="200,200,100,100">
+	    </uiKit:XamlUIView>
+</uiKit:XamlUIView>
